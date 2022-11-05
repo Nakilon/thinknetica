@@ -10,7 +10,7 @@ require_relative "../lib/directlink"
 ARGV.each do |link|
   puts "<= #{link}"
   begin
-    link, w, h, type = DirectLink(link)
+    link, w, h, type = DirectLink.new(link).call
   rescue DirectLink::ErrorBadLink
     abort "bad link"
   end
