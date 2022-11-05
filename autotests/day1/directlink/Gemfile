@@ -7,3 +7,6 @@ gem "fastimage"
 gem "minitest"
 gem "webmock"
 gem 'rspec', '~> 3.12'
+gem 'faraday'
+gem 'faraday_middleware'
+gem 'open3'

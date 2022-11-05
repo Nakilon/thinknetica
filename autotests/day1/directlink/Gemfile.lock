@@ -6,9 +6,36 @@ GEM
     crack (0.4.5)
       rexml
     diff-lcs (1.5.0)
+    faraday (1.10.2)
+      faraday-em_http (~> 1.0)
+      faraday-em_synchrony (~> 1.0)
+      faraday-excon (~> 1.1)
+      faraday-httpclient (~> 1.0)
+      faraday-multipart (~> 1.0)
+      faraday-net_http (~> 1.0)
+      faraday-net_http_persistent (~> 1.0)
+      faraday-patron (~> 1.0)
+      faraday-rack (~> 1.0)
+      faraday-retry (~> 1.0)
+      ruby2_keywords (>= 0.0.4)
+    faraday-em_http (1.0.0)
+    faraday-em_synchrony (1.0.0)
+    faraday-excon (1.1.0)
+    faraday-httpclient (1.0.1)
+    faraday-multipart (1.0.4)
+      multipart-post (~> 2)
+    faraday-net_http (1.0.1)
+    faraday-net_http_persistent (1.2.0)
+    faraday-patron (1.0.0)
+    faraday-rack (1.0.0)
+    faraday-retry (1.0.3)
+    faraday_middleware (1.2.0)
+      faraday (~> 1.0)
     fastimage (2.2.6)
     hashdiff (1.0.1)
     minitest (5.15.0)
+    multipart-post (2.2.3)
+    open3 (0.1.1)
     public_suffix (4.0.7)
     rexml (3.2.5)
     rspec (3.12.0)
@@ -24,6 +51,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-support (3.12.0)
+    ruby2_keywords (0.0.5)
     webmock (3.18.1)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
@@ -35,8 +63,11 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  faraday
+  faraday_middleware
   fastimage
   minitest
+  open3
   rspec (~> 3.12)
   webmock
 
